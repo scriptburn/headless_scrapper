@@ -1,0 +1,33 @@
+{
+    "name": "scriptburn/headless_scrapper",
+    "description": "A package to implement web scraping with headless chrome and Puppeteer",
+    "keywords": ["http", "cache"],
+    "license": "BSD-3-Clause",
+    "authors": [
+    {
+        "name": "Rajneesh ojha",
+        "email": "contact@scriptburn.com"
+    }],
+    "require":
+    {
+        "php": ">=7.1",
+        "nesk/puphpeteer": "*"
+    },
+    "scripts":
+    {
+        "post-install-cmd": [
+            "echo ' running post-install-cmd' && bash post-install-cmd.sh"
+        ],
+        "post-update-cmd": [
+            "echo ' running post-update-cmd' && bash post-install-cmd.sh"
+
+        ]
+    },
+    "autoload":
+    { 
+        "psr-4":
+        {
+            "Scriptburn\\HeadlessScrapper\\": "src/"
+        }
+    }
+}
